@@ -3,10 +3,10 @@
 # global variables
 
 numMatches = 16 # int number of NFL macthes in a given week
-homeTeams[16] # str list containing the home teams for each matchup
-roadTeams[16] # str list conntaining the road teams for each matchup
-playerPredictions[16] # int list containing a player's picks for each matchup
-gameResults[16] # int list containing the results of each matchup
+homeTeams = [] # str list containing the home teams for each matchup
+roadTeams = [] # str list conntaining the road teams for each matchup
+playerPredictions = [] # int list containing a player's picks for each matchup
+gameResults = [] # int list containing the results of each matchup
 weeklyScore = 0 # how many matchups a player picked correctly each week
 totalScore = 0 # self-explanatory
 
