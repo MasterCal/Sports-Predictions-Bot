@@ -23,8 +23,8 @@ def playerPredictions():
    
      i += 1
     
-   print(dataString)
-   print("If you wish to make any changes, use ```picks edit```")
+  print(dataString)
+  print("If you wish to make any changes, use ```picks edit```")
 
  
     
