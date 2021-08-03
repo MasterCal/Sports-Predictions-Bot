@@ -2,13 +2,13 @@
 
 # global variables
 
-numMatches # int number of NFL macthes in a given week
+numMatches = 16 # int number of NFL macthes in a given week
 homeTeams[16] # str list containing the home teams for each matchup
 roadTeams[16] # str list conntaining the road teams for each matchup
 playerPredictions[16] # int list containing a player's picks for each matchup
 gameResults[16] # int list containing the results of each matchup
-weeklyScore # how many matchups a player picked correctly each week
-totalScore # self-explanatory
+weeklyScore = 0 # how many matchups a player picked correctly each week
+totalScore = 0 # self-explanatory
 
 def inputMatches():
   numMatches = int(input("Enter the number of matches for this week: "))
