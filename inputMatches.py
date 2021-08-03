@@ -13,9 +13,9 @@ totalScore = 0 # self-explanatory
 def inputMatches():
   numMatches = int(input("Enter the number of matches for this week: "))
   
-  for i in range(0, numMatches):
-    homeTeams[i] = input("Enter the home team for matchup " + str(i+1) + ": ")
-    roadTeams[i] = input("Enter the road team for matchup " + str(i+1) + ": ")
+  for i in range(1, numMatches+1):
+    homeTeams[i] = input("Enter the home team for matchup " + str(i) + ": ")
+    roadTeams[i] = input("Enter the road team for matchup " + str(i) + ": ")
     
   print(homeTeams)
   print(roadTeams)
