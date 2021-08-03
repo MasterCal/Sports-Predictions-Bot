@@ -4,7 +4,7 @@ def resolvePredictions():
   dataString = "Results/n/n" #cresults of the matches
   leaderboard = "" # weekly and total leaderboards
   
-  for i in range(0, numMatches):
+  for i in range(1, numMatches+1):
     gameResults[i] = int(input("Who won between " + homeTeam[i] + " and " + roadTeam[i] + "? ")) # 1 for home, 2 for away, 0 for a tie
     
     if (gameResults[i] == 0): # match is a draw
