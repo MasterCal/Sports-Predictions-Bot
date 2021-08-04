@@ -2,11 +2,6 @@
 import GlobalVars
 
 def playerPredictions():
-  global GlobalVars.numGames
-  global GlobalVars.homeTeams
-  global GlobalVars.roadTeams
-  global GlobalVars.playerPicks
-  
   i = 0 # counter variable
   dataString = "Your Picks/n/n" # final message to be sent
 
