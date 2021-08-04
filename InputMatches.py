@@ -1,15 +1,16 @@
 # Admin inputs the matches performed each week
+import GlobalVars
 
 def inputMatches():
-  global numMatches
-  global homeTeams
-  global roadTeams
+  global GlobalVars.numMatches
+  global GlobalVars.homeTeams
+  global GlobalVars.roadTeams
   
-  numMatches = int(input("Enter the number of matches for this week: "))
+  GlobalVars.numMatches = int(input("Enter the number of matches for this week: "))
   
-  for i in range(0, numMatches):
-    homeTeams.append(input("Enter the home team for matchup " + str(i+1) + ": "))
-    roadTeams.append(input("Enter the road team for matchup " + str(i+1) + ": "))
+  for i in range(0, GlobalVars.numMatches):
+    GlobalVars.homeTeams.append(input("Enter the home team for matchup " + str(i+1) + ": "))
+    GlobalVars.roadTeams.append(input("Enter the road team for matchup " + str(i+1) + ": "))
     
-  print(homeTeams)
-  print(roadTeams)
+  print(GlobalVars.homeTeams)
+  print(GlobalVars.roadTeams)
