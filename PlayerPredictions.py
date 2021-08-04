@@ -1,7 +1,11 @@
 # player makes their predictions
 
 def playerPredictions():
-  global numGames, homeTeams, roadTeams, playerPicks
+  global numGames
+  global homeTeams
+  global roadTeams
+  global playerPicks
+  
   i = 0 # counter variable
   dataString = "Your Picks/n/n" # final message to be sent
 
