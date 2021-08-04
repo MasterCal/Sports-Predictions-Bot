@@ -18,7 +18,7 @@ def resolvePredictions():
       
    if (GlobalVars.gameResults[i] == 1):
      dataString += GlobalVars.homeTeams[i] + " def. " + GlobalVars.roadTeams[i] + "\n"
-   elif (gameResults[i] == 2):
+   elif (GlobalVars.gameResults[i] == 2):
      dataString += GlobalVars.roadTeams[i] + " def. " + GlobalVars.homeTeams[i] + "\n"
       
  print(dataString)
