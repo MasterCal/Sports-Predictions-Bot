@@ -18,9 +18,9 @@ def playerPredictions():
      elif (GlobalVars.playerPicks[i] == 2):
        print("You predicted " + GlobalVars.roadTeams[i])
        dataString += str(i) + ". " + GlobalVars.roadTeams[i] + "\n"
-     else:
+     else: # error handling
        while(GlobalVars.playerPicks[i] != 1 or GlobalVars.playerPicks[i] != 2):
-          GlobalVars.playerPicks[i] = input("Invalid input, please type 1 or 2: ")
+          GlobalVars.playerPicks[i] = int(input("Invalid input, please type 1 or 2: "))
    
      i += 1
     
