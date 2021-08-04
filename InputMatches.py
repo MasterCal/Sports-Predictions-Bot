@@ -1,7 +1,10 @@
 # Admin inputs the matches performed each week
 
 def inputMatches():
-  global numMatches, homeTeams, roadTeams
+  global numMatches
+  global homeTeams
+  global roadTeams
+  
   numMatches = int(input("Enter the number of matches for this week: "))
   
   for i in range(0, numMatches):
