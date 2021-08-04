@@ -2,10 +2,6 @@
 import GlobalVars
 
 def inputMatches():
-  global GlobalVars.numMatches
-  global GlobalVars.homeTeams
-  global GlobalVars.roadTeams
-  
   GlobalVars.numMatches = int(input("Enter the number of matches for this week: "))
   
   for i in range(0, GlobalVars.numMatches):
