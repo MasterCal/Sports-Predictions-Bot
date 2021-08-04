@@ -2,7 +2,7 @@
 import GlobalVars
 
 def resolvePredictions():
- dataString = "Results/n/n" #cresults of the matches
+ dataString = "Results\n\n" #results of the matches
  leaderboard = "" # weekly and total leaderboards
   
  for i in range(0, GlobalVars.numMatches):
@@ -21,12 +21,12 @@ def resolvePredictions():
    elif (GlobalVars.gameResults[i] == 2):
      dataString += GlobalVars.roadTeams[i] + " def. " + GlobalVars.homeTeams[i] + "\n"
       
- print(dataString)
+ print(dataString + "\n")
   
  leaderboard += "Weekly Score\n\n" 
- leaderboard += GlobalVars.weeklyScore
+ leaderboard += str(GlobalVars.weeklyScore)
  leaderboard += "\n\nTotal Score"
- leaderboard += GlobalVars.totalScore
+ leaderboard += str(GlobalVars.totalScore)
   
  print(leaderboard)
     
