@@ -10,7 +10,7 @@ def playerPredictions():
   while(i < GlobalVars.numMatches):
      print("Who do you think will win between ", GlobalVars.homeTeams[i], " and ", GlobalVars.roadTeams[i], "?")
 
-     GlobalVars.playerpicks.append(input("Enter 1 for the first team and 2 for the second team: "))
+     GlobalVars.playerPicks.append(input("Enter 1 for the first team and 2 for the second team: "))
 
      if (GlobalVars.playerPicks[i] == 1):
        print("You predicted " + GlobalVars.homeTeams[i])
@@ -25,7 +25,7 @@ def playerPredictions():
      i += 1
     
   print(dataString)
-  print("If you wish to make any changes, use ```picks edit```")
+  print("If you wish to make any changes, use picks edit")
 
  
     
