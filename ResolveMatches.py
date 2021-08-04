@@ -1,7 +1,13 @@
 # admin inputs results of the matches, and scores are calculated
 
 def resolvePredictions():
-  global numMatches, gameResults, weeklyScore, totalScore, playerPicks, homeTeams, roadTeams
+  global numMatches
+  global gameResults
+  global weeklyScore
+  global totalScore
+  global playerPicks
+  global homeTeams
+  global roadTeams
   
   dataString = "Results/n/n" #cresults of the matches
   leaderboard = "" # weekly and total leaderboards
