@@ -7,7 +7,7 @@ def playerPredictions():
 
   print("Make your selections, one by one, as the bot presents them. If you make a mistake, you can make changes later.")
 
-  while(i < GlobalVars.numGames):
+  while(i < GlobalVars.numMatches):
      print("Who do you think will win between ", GlobalVars.homeTeams[i], " and ", GlobalVars.roadTeams[i], "?")
 
      GlobalVars.playerpicks.append(input("Enter 1 for the first team and 2 for the second team: "))
