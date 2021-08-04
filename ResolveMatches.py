@@ -1,4 +1,5 @@
 # admin inputs results of the matches, and scores are calculated
+import GlobalVars
 
 def resolvePredictions():
  dataString = "Results/n/n" #cresults of the matches
