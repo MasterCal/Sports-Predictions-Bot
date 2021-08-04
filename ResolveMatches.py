@@ -25,7 +25,7 @@ def resolvePredictions():
   
  leaderboard += "Weekly Score\n\n" 
  leaderboard += str(GlobalVars.weeklyScore)
- leaderboard += "\n\nTotal Score"
+ leaderboard += "\n\nTotal Score\n\n"
  leaderboard += str(GlobalVars.totalScore)
   
  print(leaderboard)
