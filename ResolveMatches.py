@@ -10,7 +10,7 @@ def resolvePredictions():
    if (GlobalVars.gameResults[i] == 0): # match is a draw
      GlobalVars.weeklyScore += 0.5
      GlobalVars.totalScore += 0.5
-     dataString += GlobalVars.homeTeams[i] + " and " + GlobalVars.roadTeams[i] + " tied/n"
+     dataString += GlobalVars.homeTeams[i] + " and " + GlobalVars.roadTeams[i] + " tied\n"
    elif (GlobalVars.gameResults[i] == GlobalVars.playerPicks[i]): # correct prediction
      GlobalVars.weeklyScore += 1
      GlobalVars.totalScore += 1
@@ -22,9 +22,9 @@ def resolvePredictions():
       
  print(dataString)
   
- leaderboard += "Weekly Score/n/n" 
+ leaderboard += "Weekly Score\n\n" 
  leaderboard += GlobalVars.weeklyScore
- leaderboard += "/n/nTotal Score"
+ leaderboard += "\n\nTotal Score"
  leaderboard += GlobalVars.totalScore
   
  print(leaderboard)
