@@ -3,7 +3,7 @@ import GlobalVars
 
 def playerPredictions():
   i = 0 # counter variable
-  dataString = "Your Picks/n/n" # final message to be sent
+  dataString = "Your Picks\n\n" # final message to be sent
 
   print("\nMake your selections, one by one, as the bot presents them. If you make a mistake, you can make changes later.\n")
 
