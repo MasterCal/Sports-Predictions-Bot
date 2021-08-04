@@ -5,12 +5,12 @@ def playerPredictions():
   i = 0 # counter variable
   dataString = "Your Picks/n/n" # final message to be sent
 
-  print("Make your selections, one by one, as the bot presents them. If you make a mistake, you can make changes later.")
+  print("/nMake your selections, one by one, as the bot presents them. If you make a mistake, you can make changes later./n")
 
   while(i < GlobalVars.numMatches):
-     print("Who do you think will win between ", GlobalVars.homeTeams[i], " and ", GlobalVars.roadTeams[i], "?")
+     print("Who do you think will win between " + GlobalVars.homeTeams[i] + " and " + GlobalVars.roadTeams[i] + "?")
 
-     GlobalVars.playerPicks.append(input("Enter 1 for the first team and 2 for the second team: "))
+     GlobalVars.playerPicks.append(int(input("Enter 1 for the first team and 2 for the second team: ")))
 
      if (GlobalVars.playerPicks[i] == 1):
        print("You predicted " + GlobalVars.homeTeams[i])
@@ -20,7 +20,7 @@ def playerPredictions():
        dataString += str(i) + ". " + GlobalVars.roadTeams[i] + "/n"
      else:
        while(GlobalVars.playerPicks[i] != 1 or GlobalVars.playerPicks[i] != 2):
-          GlobalVars.playerPicks[i] = input("Invalid input, please type 1 or 2")
+          GlobalVars.playerPicks[i] = input("Invalid input, please type 1 or 2: ")
    
      i += 1
     
