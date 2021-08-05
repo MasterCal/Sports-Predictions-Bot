@@ -15,7 +15,8 @@ def playerPredictions():
       while(GlobalVars.playerPicks[i] != 1 and GlobalVars.playerPicks[i] != 2): # error handling
          GlobalVars.playerPicks[i] = int(input("Invalid input, please type 1 or 2: "))
     except ValueError:
-      print("Invalid input, please type 1 or 2.")
+      while(GlobalVars.playerPicks[i] != 1 and GlobalVars.playerPicks[i] != 2): # error handling
+         GlobalVars.playerPicks[i] = int(input("Invalid input, please type 1 or 2: "))
      
     if (GlobalVars.playerPicks[i] == 1): # print the player's pick
       print("You predicted " + GlobalVars.homeTeams[i])
