@@ -13,11 +13,12 @@ def playerPredictions():
         GlobalVars.playerPicks.append(int(input("Enter 1 for the first team and 2 for the second team: ")))
         if (GlobalVars.playerPicks[i] != 1 and GlobalVars.playerPicks[i] != 2):
           raise Exception
-        break
       except ValueError:
         GlobalVars.playerPicks.append(int(input("Invalid input, please type 1 or 2: ")))
       except Exception as ex:
         GlobalVars.playerPicks.append(int(input("Invalid input, please type 1 or 2: ")))
+      else:
+        break
       finally:
         if (GlobalVars.playerPicks[i] == 1): # print the player's pick
           print("You predicted " + GlobalVars.homeTeams[i])
