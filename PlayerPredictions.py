@@ -16,9 +16,9 @@ def playerPredictions():
           raise Exception
         break
       except ValueError:
-        GlobalVars.playerPicks[i+1] = int(input("Invalid input, please type 1 or 2: "))
+        GlobalVars.playerPicks.append(int(input("Invalid input, please type 1 or 2: ")))
       except Exception:
-        GlobalVars.playerPicks[i+1] = int(input("Invalid input, please type 1 or 2: "))
+        GlobalVars.playerPicks.append(int(input("Invalid input, please type 1 or 2: ")))
       finally:
         if (GlobalVars.playerPicks[i] == 1): # print the player's pick
           print("You predicted " + GlobalVars.homeTeams[i])
