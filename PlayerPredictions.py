@@ -8,12 +8,12 @@ def playerPredictions():
   print("\nMake your selections, one by one, as the bot presents them. If you make a mistake, you can make changes later.\n")
   while(i < GlobalVars.numMatches):
     print("Who do you think will win between " + GlobalVars.homeTeams[i] + " and " + GlobalVars.roadTeams[i] + "?")
-    GlobalVars.playerPicks.append(int(input("Enter 1 for the first team and 2 for the second team: ")))
+    GlobalVars.playerPicks.append(input("Enter 1 for the first team and 2 for the second team: "))
     while True:
       try:
         GlobalVars.playerPicks[i] = int(GlobalVars.playerPicks[i])
       except ValueError:
-        GlobalVars.playerPicks[i] = input("Invalid value input, please type 1 or 2: ")))
+        GlobalVars.playerPicks[i] = input("Invalid value input, please type 1 or 2: ")
       else:
         while (GlobalVars.playerPicks[i] != 1 and GlobalVars.playerPicks[i] != 2)
           GlobalVars.playerPicks[i] = input("Invalid int input, please type 1 or 2")
