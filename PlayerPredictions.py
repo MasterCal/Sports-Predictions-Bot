@@ -8,24 +8,23 @@ def playerPredictions():
   print("\nMake your selections, one by one, as the bot presents them. If you make a mistake, you can make changes later.\n")
   while(i < GlobalVars.numMatches):
     print("Who do you think will win between " + GlobalVars.homeTeams[i] + " and " + GlobalVars.roadTeams[i] + "?")
+    GlobalVars.playerPicks.append(int(input("Enter 1 for the first team and 2 for the second team: ")))
     while True:
       try:
-        GlobalVars.playerPicks.append(int(input("Enter 1 for the first team and 2 for the second team: ")))
-        if (GlobalVars.playerPicks[i] != 1 and GlobalVars.playerPicks[i] != 2):
-          raise Exception
+        GlobalVars.playerPicks[i] = int(GlobalVars.playerPicks[i])
       except ValueError:
-        GlobalVars.playerPicks.append(int(input("Invalid input, please type 1 or 2: ")))
-      except Exception as ex:
-        GlobalVars.playerPicks.append(int(input("Invalid input, please type 1 or 2: ")))
+        GlobalVars.playerPicks[i] = input("Invalid value input, please type 1 or 2: ")))
       else:
+        while (GlobalVars.playerPicks[i] != 1 and GlobalVars.playerPicks[i] != 2)
+          GlobalVars.playerPicks[i] = input("Invalid int input, please type 1 or 2")
         break
-      finally:
-        if (GlobalVars.playerPicks[i] == 1): # print the player's pick
-          print("You predicted " + GlobalVars.homeTeams[i])
-          dataString += str(i+1) + ". " + GlobalVars.homeTeams[i] + "\n"
-        elif (GlobalVars.playerPicks[i] == 2):
-          print("You predicted " + GlobalVars.roadTeams[i])
-          dataString += str(i+1) + ". " + GlobalVars.roadTeams[i] + "\n"
+        
+    if (GlobalVars.playerPicks[i] == 1): # print the player's pick
+      print("You predicted " + GlobalVars.homeTeams[i])
+      dataString += str(i+1) + ". " + GlobalVars.homeTeams[i] + "\n"
+    elif (GlobalVars.playerPicks[i] == 2):
+      print("You predicted " + GlobalVars.roadTeams[i])
+      dataString += str(i+1) + ". " + GlobalVars.roadTeams[i] + "\n"
      
     i += 1
      
