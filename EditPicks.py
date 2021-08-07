@@ -36,8 +36,8 @@ def edit():
             GlobalVars.playerPicks[number-1] == 2
           elif(GlobalVars.playerPicks[number-1] == 2):
             GlobalVars.playerPicks[number-1] == 1
-         else:
-          break
+        else:
+         break
           
       break      
           
