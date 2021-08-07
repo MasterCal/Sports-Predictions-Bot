@@ -13,21 +13,21 @@ def edit():
     ans = input("Improper input, please type y or n (Non-case sensitive). ")
   
   while(ans == 'Y' or ans == 'y'):
-    number = input("Which prediction would you like to change? Type in the corresponding number.")
+    number = input("Which prediction would you like to change? Type in the corresponding number: ")
     while True:
       try:
         number = int(number)
         if(number > GlobalVars.numMatches):
           raise Exception # try to edit a game that does not exist
       except Exception:
-        number = input("Please enter a valid match number")
+        number = input("Please enter a valid match number: ")
       else:
         if(GlobalVars.playerPicks[number-1] == 1):
           print("You will be changing your pick from " + GlobalVars.homeTeams[number-1] + " to " + GlobalVars.roadTeams[number-1] + ".")
         elif(GlobalVars.playerPicks[number-1] == 2):
           print("You will be changing your pick from " + GlobalVars.roadTeams[number-1] + " to " + GlobalVars.homeTeams[number-1] + ".")
           
-        conf = input("Are you sure you want to make this change?")
+        conf = input("Are you sure you want to make this change? ")
         while(conf != 'Y' and conf != 'y' and conf != 'N' and conf != 'n'):
           conf = input("Improper input, please type y or n (Non-case sensitive). ")
             
