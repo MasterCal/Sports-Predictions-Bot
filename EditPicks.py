@@ -33,7 +33,7 @@ def edit():
             
         if(conf == 'Y' or conf == 'y'):
           if(GlobalVars.playerPicks[number-1] == 1):
-            GlobalVars.playerPicks[number-1] == 2)
+            GlobalVars.playerPicks[number-1] == 2
           elif(GlobalVars.playerPicks[number-1] == 2):
             GlobalVars.playerPicks[number-1] == 1
          else:
