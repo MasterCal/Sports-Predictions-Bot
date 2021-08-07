@@ -48,6 +48,6 @@ def edit():
     if(GlobalVars.playerPicks[i] == 1):
       dataString += GlobalVars.homeTeams[i] + "\n"
     elif(GlobalVars.playerPicks[i] == 2):
-      dataString += GlobalVars.homeTeams[i]) + "\n"    
+      dataString += GlobalVars.homeTeams[i] + "\n"    
  
  print(dataString)  
