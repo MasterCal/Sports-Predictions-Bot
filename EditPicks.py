@@ -23,9 +23,9 @@ def edit():
         number = input("Please enter a valid match number")
       else:
         if(GlobalVars.playerPicks[number-1] == 1):
-          print("You will be changing your pick from " + GlobalVars.homeTeams[i] + " to " + GlobalVars.roadTeams[i] + ".")
+          print("You will be changing your pick from " + GlobalVars.homeTeams[number-1] + " to " + GlobalVars.roadTeams[number-1] + ".")
         elif(GlobalVars.playerPicks[number-1] == 2):
-          print("You will be changing your pick from " + GlobalVars.roadTeams[i] + " to " + GlobalVars.homeTeams[i] + ".")
+          print("You will be changing your pick from " + GlobalVars.roadTeams[number-1] + " to " + GlobalVars.homeTeams[number-1] + ".")
           
         conf = input("Are you sure you want to make this change?")
         while(conf != 'Y' and conf != 'y' and conf != 'N' and conf != 'n'):
