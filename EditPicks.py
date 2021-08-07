@@ -33,13 +33,13 @@ def edit():
             
         if(conf == 'Y' or conf == 'y'):
           if(GlobalVars.playerPicks[number-1] == 1):
-            GlobalVars.playerPicks[number-1] == 2
+            GlobalVars.playerPicks[number-1] = 2
           elif(GlobalVars.playerPicks[number-1] == 2):
-            GlobalVars.playerPicks[number-1] == 1
+            GlobalVars.playerPicks[number-1] = 1
         else:
-         break
+          break
           
-      break      
+        break      
           
     ans = input("Do you wish to change another pick? ")
     while(ans != 'Y' and ans != 'y' and ans != 'N' and ans != 'n'):
@@ -50,6 +50,6 @@ def edit():
     if(GlobalVars.playerPicks[i] == 1):
       dataString += GlobalVars.homeTeams[i] + "\n"
     elif(GlobalVars.playerPicks[i] == 2):
-      dataString += GlobalVars.homeTeams[i] + "\n"    
+      dataString += GlobalVars.roadTeams[i] + "\n"    
  
   print(dataString)  
