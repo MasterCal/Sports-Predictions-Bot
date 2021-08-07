@@ -43,7 +43,7 @@ def edit():
           
     ans = input("Do you wish to change another pick? ")
     while(ans != 'Y' and ans != 'y' and ans != 'N' and ans != 'n'):
-    ans = input("Improper input, please type y or n (Non-case sensitive). ")
+      ans = input("Improper input, please type y or n (Non-case sensitive). ")
     
   for i in range(0, GlobalVars.numMatches):
     dataString += str(i+1) + ". "
