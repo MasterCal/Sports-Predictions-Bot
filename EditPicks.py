@@ -50,4 +50,4 @@ def edit():
     elif(GlobalVars.playerPicks[i] == 2):
       dataString += GlobalVars.homeTeams[i] + "\n"    
  
- print(dataString)  
+  print(dataString)  
