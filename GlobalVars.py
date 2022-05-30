@@ -1,0 +1,10 @@
+numMatches = 16 # int number of NFL matches in a given week
+homeTeams = [] # str list containing the home teams for each matchup
+roadTeams = [] # str list containing the road teams for each matchup
+gameResults = [] # int list containing the results of each matchup
+canMakePicks = False # bool that verifies matches are inputed before players can make picks
+canEdit = False # bool that ensures editing can only take place at correct times
+ongoingEvent = False # bool to make sure multiple events aren't going on at once
+gameDays = [] # what days are the games played on
+gameHours = [] 
+gameMinutes = []
